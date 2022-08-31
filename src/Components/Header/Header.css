@@ -1,0 +1,30 @@
+.header_container {
+  width: 100vw;
+  height: 20vh;
+  border: red solid 1px;
+}
+
+.navbar_container {
+  width: 40%;
+  height: 100%;
+  margin: 0;
+  padding: 20px;
+  border: blue solid 1px;
+  list-style: none;
+}
+
+.navBtn-item button {
+  height: 60px;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+  background-color: transparent;
+}
+
+.active {
+  border: none;
+  border-bottom: black solid 1px;
+}
+
+.inactive {
+  border: none;
+}

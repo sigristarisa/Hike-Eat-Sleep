@@ -10,10 +10,10 @@ interface props {
 
 const Header: React.FC<props> = ({ setNavBtnId, activateNavBtn }) => {
   const navButtonArr: NavButton[] = [
-    { id: 0, name: "wanderfux" },
-    { id: 1, name: "about" },
-    { id: 2, name: "blog" },
-    { id: 3, name: "shop" },
+    { id: 0, name: "wanderfux", navigate: "../" },
+    { id: 1, name: "about", navigate: "../about" },
+    { id: 2, name: "blog", navigate: "../blog" },
+    { id: 3, name: "shop", navigate: "../shop" },
   ];
   return (
     <nav className='header_container justify-items_end'>

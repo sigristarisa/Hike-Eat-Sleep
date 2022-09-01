@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { NavButton } from "../../helpers/types";
 
 interface props {
@@ -14,11 +15,17 @@ const NavButtonItem: React.FC<props> = ({
   setNavBtnId,
   activateNavBtn,
 }) => {
+  const navigate = useNavigate();
+
+  const handleOnClick = (id: number, navigateTo: string): void => {
+    setNavBtnId(id);
+    navigate(navigateTo);
+  };
   return (
     <li className='navBtn-item grid-columns_two place-items_center'>
       <button
         className={`${activateNavBtn(index)}`}
-        onClick={() => setNavBtnId(navButton.id)}
+        onClick={() => handleOnClick(navButton.id, navButton.navigate)}
       >
         {navButton.name}
       </button>

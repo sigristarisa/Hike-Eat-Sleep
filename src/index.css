@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+html {
+  --font-xs: 12px;
+  --font-s: 16px;
+  --font-m: 24px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -19,6 +25,11 @@ button {
 .grid-columns_two {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-columns_two-expand-one {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .grid-columns_four {

@@ -1,14 +1,15 @@
-.homepage-main_container {
+.home-main_container {
   width: 100vw;
   height: 80vh;
+  margin-top: 20vh;
 }
 
-.logo_container {
+.home-logo_container {
   max-width: 200px;
   max-height: 200px;
-  position: absolute;
-  left: 20vw;
-  top: 24vh;
+  position: relative;
+  left: -20vw;
+  top: 4vh;
   z-index: 1;
 }
 
@@ -19,7 +20,6 @@
 
 .header-img_container {
   width: 96vw;
-  position: relative;
 }
 
 .header-img_container img {

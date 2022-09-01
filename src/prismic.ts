@@ -15,5 +15,9 @@ export const client = prismic.createClient(repositoryName, {
       type: "homepage",
       path: "/",
     },
+    {
+      type: "aboutpage",
+      path: "/about",
+    },
   ],
 });

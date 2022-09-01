@@ -1,4 +1,16 @@
 footer {
-  width: 100vw;
+  width: 90vw;
   height: 20vh;
+  padding: 60px;
+  font-size: var(--font-xs);
+}
+
+.footer-social-media-icon_container {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-social-media-icon_container img {
+  max-width: 100%;
+  max-height: 100%;
 }

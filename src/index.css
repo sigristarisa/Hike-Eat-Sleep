@@ -27,9 +27,9 @@ button {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.grid-columns_two-expand-one {
+.grid-columns_two-extend-one {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
 }
 
 .grid-columns_four {
@@ -37,13 +37,24 @@ button {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.justify-items_start {
+  display: grid;
+  justify-items: start;
+}
+
 .justify-items_center {
   display: grid;
   justify-items: center;
 }
+
 .justify-items_end {
   display: grid;
   justify-items: end;
+}
+
+.align-items_center {
+  display: grid;
+  align-items: center;
 }
 
 .align-items_end {

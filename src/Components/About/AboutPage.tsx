@@ -6,7 +6,7 @@ import "./AboutPage.css";
 
 const AboutPage: React.FC = () => {
   return (
-    <div className='about-page_container'>
+    <div className='about-page_container place-items_center'>
       <main className='place-items_center'>
         <div className='about-text_container'>
           <p>about</p>

@@ -1,7 +1,6 @@
 .header_container {
   width: 100vw;
   height: 20vh;
-  border: red solid 1px;
 }
 
 .navbar_container {
@@ -9,8 +8,15 @@
   height: 100%;
   margin: 0;
   padding: 20px;
-  border: blue solid 1px;
   list-style: none;
+}
+
+.navBtn-item {
+  width: 100%;
+}
+
+.dot {
+  width: 60px;
 }
 
 .navBtn-item button {

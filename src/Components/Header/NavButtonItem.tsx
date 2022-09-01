@@ -15,13 +15,18 @@ const NavButtonItem: React.FC<props> = ({
   activateNavBtn,
 }) => {
   return (
-    <li className='navBtn-item'>
+    <li className='navBtn-item grid-columns_two place-items_center'>
       <button
         className={`${activateNavBtn(index)}`}
         onClick={() => setNavBtnId(navButton.id)}
       >
         {navButton.name}
       </button>
+      {index === 3 ? (
+        <span></span>
+      ) : (
+        <span className='dot place-items_center'>・</span>
+      )}
     </li>
   );
 };

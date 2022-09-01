@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import Header from "./Components/Header/Header";
 import HomePage from "./Components/HomePage/HomePage";
 import "./index.css";
@@ -13,7 +14,9 @@ const App: React.FC = () => {
   return (
     <div className='App'>
       <Header setNavBtnId={setNavBtnId} activateNavBtn={activateNavBtn} />
-      <HomePage />
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+      </Routes>
     </div>
   );
 };

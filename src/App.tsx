@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "./Components/Header/Header";
+import HomePage from "./Components/HomePage/HomePage";
 import "./index.css";
 
 const App: React.FC = () => {
@@ -12,7 +13,7 @@ const App: React.FC = () => {
   return (
     <div className='App'>
       <Header setNavBtnId={setNavBtnId} activateNavBtn={activateNavBtn} />
-      <h1>Hike Eat Sleep</h1>
+      <HomePage />
     </div>
   );
 };

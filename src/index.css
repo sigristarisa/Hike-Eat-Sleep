@@ -26,9 +26,18 @@ button {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.justify-items_center {
+  display: grid;
+  justify-items: center;
+}
 .justify-items_end {
   display: grid;
   justify-items: end;
+}
+
+.align-items_end {
+  display: grid;
+  align-items: end;
 }
 
 .place-items_center {

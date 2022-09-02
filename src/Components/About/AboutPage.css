@@ -1,27 +1,26 @@
 .about-page_container {
   width: 100vw;
-  height: 80vh;
-  overflow: scroll;
+  margin-top: 24vh;
 }
 
 .about-text_container {
   width: 50vw;
   margin-top: 20vh;
-  font-size: var(--font-s);
   line-height: 2em;
 }
 
-.about-text_container p {
-  margin-bottom: var(--font-m);
-}
-
 .about-logo_container {
-  max-width: 200px;
-  max-height: 200px;
+  max-width: 120px;
+  max-height: 120px;
   position: relative;
   left: 20vw;
   top: 4vh;
   z-index: 1;
+}
+
+.about-logo_container img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .about-img_container {

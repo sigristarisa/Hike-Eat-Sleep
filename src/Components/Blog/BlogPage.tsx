@@ -1,53 +1,33 @@
 import React from "react";
 import { useAllPrismicDocumentsByType } from "@prismicio/react";
 import Footer from "../Footer/Footer";
+import { BlogPost } from "../../helpers/types";
 import hikeEatSleepLogo from "../../assets/HikeEatSleep_Logo.png";
 import hikeEatSleepBlog from "../../assets/HikeEatSleep_Blog.png";
-
-type PostTitle = {
-  span: [];
-  text: string;
-  type: string;
-};
-
-type BlogPostData = {
-  post_title: [PostTitle];
-};
-
-type BlogPost = {
-  alternate_languages: [];
-  data: BlogPostData;
-  first_publication_date: string;
-  href: string;
-  id: string;
-  lang: string;
-  last_publication_date: string;
-  linked_documents: [];
-  slugs: [string];
-  tags: [];
-  type: string;
-  uid: string;
-  url: string;
-};
+import "./BlogPage.css";
 
 const BlogPage: React.FC = () => {
   const [blogposts] = useAllPrismicDocumentsByType<BlogPost>("blogpost");
 
-  const checkBlogPosts = (): void => {
-    if (blogposts) console.log(blogposts[0].data.post_title[0].text);
-  };
-
-  console.log(checkBlogPosts());
   return (
-    <div>
-      <div>
-        <ul>
-          {blogposts &&
-            blogposts.map((blogpost, index) => (
-              <li>{blogpost.data.post_title[0].text}</li>
-            ))}
-        </ul>
-      </div>
+    <div className='place-items_center'>
+      <section className='blog-list_container'>
+        <div className='blog-list-header_container grid-columns_two-extend-one'>
+          <p>outdoor blog by wanderfux</p>
+          <button>SUBSCRIBE</button>
+        </div>
+        <div>
+          <ul className='blog-list'>
+            {blogposts &&
+              blogposts.map((blogpost, index) => (
+                <li key={index} className='grid-columns_two-extend-one'>
+                  <p>{blogpost.data.post_title[0].text}</p>
+                  <p>...</p>
+                </li>
+              ))}
+          </ul>
+        </div>
+      </section>
       <div className='blog-logo_container'>
         <img src={hikeEatSleepLogo} alt='hike eat sleep logo' />
       </div>

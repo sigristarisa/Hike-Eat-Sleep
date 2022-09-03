@@ -1,11 +1,25 @@
+.blog-page_container {
+  width: 100vw;
+  margin-top: 24vh;
+}
+
 .blog-list_container {
   width: 50vw;
-  margin-top: 20vh;
+  margin: 20vh 0;
   border: 1px solid red;
 }
 
 .blog-list-header_container {
+  height: 8vh;
   border: 1px blue solid;
+}
+
+.blog-list-header_container button {
+  padding: 0;
+  background-color: transparent;
+  font-family: "Roboto Mono", monospace;
+  font-size: var(--font-xs);
+  border: none;
 }
 
 .blog-list {
@@ -22,8 +36,8 @@
 }
 
 .blog-logo_container {
-  width: 200px;
-  height: 200px;
+  max-width: 120px;
+  max-height: 120px;
   position: relative;
   left: 20vw;
   top: 4vh;

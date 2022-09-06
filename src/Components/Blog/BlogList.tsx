@@ -1,11 +1,12 @@
 import React from "react";
 import BlogPostItem from "./BlogPostItem";
-import { useAllPrismicDocumentsByType } from "@prismicio/react";
 import { BlogPost } from "../../helpers/types";
 
-const BlogList: React.FC = () => {
-  const [blogposts] = useAllPrismicDocumentsByType<BlogPost>("blogpost");
+interface props {
+  blogposts: BlogPost[];
+}
 
+const BlogList: React.FC<props> = ({ blogposts }) => {
   const renderBlogPost = (): void => {
     if (blogposts) console.log(blogposts[1].data);
   };

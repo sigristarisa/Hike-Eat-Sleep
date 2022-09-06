@@ -14,7 +14,7 @@ type BlogPostData = {
   post_title: [PostTitle];
 };
 
-export type BlogPost = {
+export interface BlogPost {
   alternate_languages: [];
   data: BlogPostData;
   first_publication_date: string;
@@ -28,4 +28,4 @@ export type BlogPost = {
   type: string;
   uid: string;
   url: string;
-};
+}

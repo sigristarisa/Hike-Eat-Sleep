@@ -6,6 +6,8 @@ import AboutPage from "./Components/About/AboutPage";
 import BlogPage from "./Components/Blog/BlogPage";
 import BlogPostPage from "./Components/Blog/BlogPostPage";
 import ShopPage from "./Components/Shop/ShopPage";
+import { useAllPrismicDocumentsByType } from "@prismicio/react";
+import { BlogPost } from "./helpers/types";
 import "./index.css";
 
 const App: React.FC = () => {
@@ -15,13 +17,15 @@ const App: React.FC = () => {
     return navBtnId === index ? "active" : "inactive";
   };
 
+  const [blogposts] = useAllPrismicDocumentsByType<BlogPost>("blogpost");
+
   return (
     <div className='App'>
       <Header setNavBtnId={setNavBtnId} activateNavBtn={activateNavBtn} />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />
-        <Route path='/blog' element={<BlogPage />} />
+        <Route path='/blog' element={<BlogPage blogposts={blogposts!} />} />
         <Route path='/blog/:uid' element={<BlogPostPage />} />
         <Route path='/shop' element={<ShopPage />} />
       </Routes>

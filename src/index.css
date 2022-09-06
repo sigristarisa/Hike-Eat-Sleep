@@ -21,6 +21,11 @@ button {
   cursor: pointer;
 }
 
+p {
+  letter-spacing: 0.1em;
+  line-height: 2em;
+}
+
 /* LAYOUT */
 .grid-columns_two {
   display: grid;

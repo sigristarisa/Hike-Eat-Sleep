@@ -7,11 +7,11 @@ const BlogList: React.FC = () => {
   const [blogposts] = useAllPrismicDocumentsByType<BlogPost>("blogpost");
 
   const renderBlogPost = (): void => {
-    if (blogposts) console.log(blogposts[1]);
+    if (blogposts) console.log(blogposts[1].data);
   };
 
   renderBlogPost();
-  console.log(renderBlogPost());
+
   return (
     <div>
       <ul className='blog-list'>

@@ -4,6 +4,7 @@ import Header from "./Components/Header/Header";
 import HomePage from "./Components/Home/HomePage";
 import AboutPage from "./Components/About/AboutPage";
 import BlogPage from "./Components/Blog/BlogPage";
+import BlogPostPage from "./Components/Blog/BlogPostPage";
 import ShopPage from "./Components/Shop/ShopPage";
 import "./index.css";
 
@@ -21,6 +22,7 @@ const App: React.FC = () => {
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/blog' element={<BlogPage />} />
+        <Route path='/blog/post' element={<BlogPostPage />} />
         <Route path='/shop' element={<ShopPage />} />
       </Routes>
     </div>

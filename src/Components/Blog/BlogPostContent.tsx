@@ -14,10 +14,12 @@ const BlogPostContent: React.FC<Props> = ({ content }) => {
             return <p>{(content.primary as PostText).text[0].text}</p>;
           case "image":
             return (
-              <img
-                src={(content.primary as PostImage).image.url}
-                alt='wanderfux'
-              />
+              <div className='blog-post-image_container'>
+                <img
+                  src={(content.primary as PostImage).image.url}
+                  alt={(content.primary as PostImage).image.alt}
+                />
+              </div>
             );
           default:
             return <p>Oops! empty space...</p>;

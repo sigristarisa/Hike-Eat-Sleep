@@ -20,3 +20,17 @@
   font-size: var(--font-xs);
   border: none;
 }
+
+.blog-post-content_container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.blog-post-image_container {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.blog-post-content_container img {
+  max-width: 100%;
+}

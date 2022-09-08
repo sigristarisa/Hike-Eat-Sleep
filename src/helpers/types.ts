@@ -22,7 +22,7 @@ export type PostText = {
 
 export type PostImage = {
   image: {
-    alt: string | null;
+    alt: string | undefined;
     copyright: string | null;
     dimensions: {
       width: number;

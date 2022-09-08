@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { BlogPost } from "../../helpers/types";
 
-interface props {
+interface Props {
   blogpost: BlogPost;
 }
 
-const BlogPostItem: React.FC<props> = ({ blogpost }) => {
+const BlogPostItem: React.FC<Props> = ({ blogpost }) => {
   return (
     <Link to={`/blog/${blogpost.uid}`} state={{ blogpost }}>
       <li className='grid-columns_two-extend-one'>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import BlogPostText from "./BlogPostText";
+import BlogPostContent from "./BlogPostContent";
 import { BlogPost, Location } from "../../helpers/types";
 import "./BlogPostPage.css";
 
@@ -24,7 +24,7 @@ const BlogPostPage: React.FC = () => {
           <div className='blog-post-content_container'>
             <ul>
               {blogpost.data.body.map((content, index) => (
-                <BlogPostText content={content} />
+                <BlogPostContent key={index} content={content} />
               ))}
             </ul>
           </div>

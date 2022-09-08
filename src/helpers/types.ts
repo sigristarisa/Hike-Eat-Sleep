@@ -21,16 +21,18 @@ export type PostText = {
 };
 
 export type PostImage = {
-  alt: string | null;
-  copyright: string | null;
-  dimensions: {
-    width: number;
-    height: number;
+  image: {
+    alt: string | null;
+    copyright: string | null;
+    dimensions: {
+      width: number;
+      height: number;
+    };
+    url: string;
+    type: string;
+    text: string;
+    spans: [];
   };
-  url: string;
-  type: string;
-  text: string;
-  spans: [];
 };
 
 export type PostBody = {

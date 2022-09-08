@@ -9,11 +9,11 @@
 }
 
 .about-logo_container {
-  max-width: 120px;
-  max-height: 120px;
+  width: 30vw;
+  height: 30vh;
   position: relative;
-  left: 20vw;
-  top: 4vh;
+  left: 32vw;
+  top: 14vh;
   z-index: 1;
 }
 

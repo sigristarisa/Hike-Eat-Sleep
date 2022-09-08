@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import BlogPostContent from "./BlogPostContent";
+import Footer from "../Footer/Footer";
 import { BlogPost, Location } from "../../helpers/types";
 import "./BlogPostPage.css";
 
 const BlogPostPage: React.FC = () => {
   const [blogpost, setBlogPost] = useState<BlogPost>();
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const clickedBlogPost: BlogPost = (location as Location).state.blogpost;
@@ -19,7 +21,7 @@ const BlogPostPage: React.FC = () => {
         <div className='blog-post_container'>
           <header className='blog-post-header_container grid-columns_two-extend-one'>
             <p>{blogpost.data.post_title[0].text}</p>
-            <button>BACK TO BLOG</button>
+            <button onClick={() => navigate("../blog")}>BACK TO BLOG</button>
           </header>
           <div className='blog-post-content_container'>
             <ul>
@@ -30,6 +32,7 @@ const BlogPostPage: React.FC = () => {
           </div>
         </div>
       )}
+      <Footer />
     </div>
   );
 };

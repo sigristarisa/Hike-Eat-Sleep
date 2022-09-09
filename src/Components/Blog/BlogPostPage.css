@@ -21,6 +21,10 @@
   border: none;
 }
 
+.blog-post-header_container button:hover {
+  color: var(--red);
+}
+
 .blog-post-content_container ul {
   list-style: none;
   padding: 0;

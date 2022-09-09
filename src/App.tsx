@@ -5,6 +5,7 @@ import HomePage from "./Components/Home/HomePage";
 import AboutPage from "./Components/About/AboutPage";
 import BlogPage from "./Components/Blog/BlogPage";
 import BlogPostPage from "./Components/Blog/BlogPostPage";
+import SubscribePage from "./Components/Subscribe/SubscribePage";
 import ShopPage from "./Components/Shop/ShopPage";
 
 import "./index.css";
@@ -24,6 +25,7 @@ const App: React.FC = () => {
         <Route path='/about' element={<AboutPage />} />
         <Route path='/blog' element={<BlogPage />} />
         <Route path='/blog/:uid' element={<BlogPostPage />} />
+        <Route path='/subscribe' element={<SubscribePage />} />
         <Route path='/shop' element={<ShopPage />} />
       </Routes>
     </div>

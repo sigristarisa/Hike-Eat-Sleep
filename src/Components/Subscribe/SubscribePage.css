@@ -1,0 +1,25 @@
+.subscribe-page_container {
+  width: 100vw;
+  margin-top: 24vh;
+  position: fixed;
+}
+
+.subscribe-page_container main {
+  height: 56vh;
+}
+
+.subscribe-form {
+  width: 40vw;
+  height: 4vh;
+  padding-bottom: 6vh;
+  border-bottom: solid 1px black;
+}
+
+.subscribe-form input {
+  border: none;
+  background-color: transparent;
+}
+
+.subscribe-form input[type="submit"]:hover {
+  color: var(--red);
+}

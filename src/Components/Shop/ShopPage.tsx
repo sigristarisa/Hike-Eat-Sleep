@@ -1,11 +1,15 @@
 import React from "react";
+import Footer from "../Footer/Footer";
 import "./ShopPage.css";
 
 const ShopPage: React.FC = () => {
   return (
-    <main className='shop-main_container place-items_center'>
-      <p>coming soon...</p>
-    </main>
+    <div className='place-items_center'>
+      <main className='shop-main_container place-items_center'>
+        <p>coming soon...</p>
+      </main>
+      <Footer />
+    </div>
   );
 };
 

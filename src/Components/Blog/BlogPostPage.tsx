@@ -26,12 +26,7 @@ const BlogPostPage: React.FC = () => {
           <div className='blog-post-content_container'>
             <ul>
               {blogpost.data.body.map((content, index) => (
-                <BlogPostContent
-                  key={index}
-                  content={content}
-                  // index={index}
-                  // blogpostLength={blogpost.data.body.length}
-                />
+                <BlogPostContent key={index} content={content} />
               ))}
             </ul>
           </div>

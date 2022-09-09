@@ -11,7 +11,12 @@ const BlogList: React.FC = () => {
       <ul className='blog-list'>
         {blogposts &&
           blogposts.map((blogpost, index) => (
-            <BlogPostItem blogpost={blogpost} key={index} />
+            <BlogPostItem
+              blogpost={blogpost}
+              key={index}
+              index={index}
+              blogpostLength={blogposts.length}
+            />
           ))}
       </ul>
     </div>

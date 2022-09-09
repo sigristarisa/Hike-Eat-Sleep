@@ -21,6 +21,10 @@
   border: none;
 }
 
+.blog-list-header_container button:hover {
+  color: var(--red);
+}
+
 .blog-list {
   padding: 0;
   list-style: none;

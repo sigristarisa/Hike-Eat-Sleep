@@ -31,7 +31,8 @@
   background-color: transparent;
 }
 
-.active {
+.active,
+.navBtn-item button:hover {
   border: none;
   border-bottom: black solid 1px;
 }

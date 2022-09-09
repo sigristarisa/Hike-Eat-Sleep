@@ -5,13 +5,12 @@
 
 .blog-list_container {
   width: 50vw;
-  margin: 20vh 0;
-  border: 1px solid red;
+  padding: 0 1vw;
+  margin: 20vh;
 }
 
 .blog-list-header_container {
   height: 8vh;
-  border: 1px blue solid;
 }
 
 .blog-list-header_container button {
@@ -47,4 +46,12 @@
 .blog-logo_container img {
   max-width: 100%;
   max-height: 100%;
+}
+
+.blog-post-item_container {
+  height: 8vh;
+}
+
+.blog-post-item_container-underline {
+  border-bottom: 1px solid black;
 }

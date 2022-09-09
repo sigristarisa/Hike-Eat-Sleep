@@ -6,7 +6,7 @@
 .blog-post_container {
   width: 50vw;
   margin: 20vh 0;
-  border: 1px solid red;
+  padding: 0 1vw;
 }
 
 .blog-post-header_container {

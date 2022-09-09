@@ -26,6 +26,11 @@ p {
   line-height: 2em;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 /* LAYOUT */
 .grid-columns_two {
   display: grid;
@@ -35,6 +40,11 @@ p {
 .grid-columns_two-extend-one {
   display: grid;
   grid-template-columns: 3fr 1fr;
+}
+
+.grid-columns_two-extend-auto {
+  display: grid;
+  grid-template-columns: 1fr auto;
 }
 
 .grid-columns_four {

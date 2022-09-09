@@ -4,12 +4,19 @@ import { BlogPost } from "../../helpers/types";
 
 interface Props {
   blogpost: BlogPost;
+  // index: number;
+  // blogpostLength: number;
 }
 
 const BlogPostItem: React.FC<Props> = ({ blogpost }) => {
+  // const addUnderline = (): string => {
+  //   return index === blogpostLength - 1
+  //     ? ""
+  //     : "blog-post-item_container-underline";
+  // };
   return (
     <Link to={`/blog/${blogpost.uid}`} state={{ blogpost }}>
-      <li className='grid-columns_two-extend-one'>
+      <li className={`blog-post-item_container grid-columns_two-extend-auto`}>
         <p>{blogpost.data.post_title[0].text}</p>
         <p>...</p>
       </li>

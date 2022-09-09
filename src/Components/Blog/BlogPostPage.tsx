@@ -19,14 +19,19 @@ const BlogPostPage: React.FC = () => {
     <div className='blog-post-page_container place-items_center'>
       {blogpost && (
         <div className='blog-post_container'>
-          <header className='blog-post-header_container grid-columns_two-extend-one'>
+          <header className='blog-post-header_container grid-columns_two-extend-auto'>
             <p>{blogpost.data.post_title[0].text}</p>
             <button onClick={() => navigate("../blog")}>BACK TO BLOG</button>
           </header>
           <div className='blog-post-content_container'>
             <ul>
               {blogpost.data.body.map((content, index) => (
-                <BlogPostContent key={index} content={content} />
+                <BlogPostContent
+                  key={index}
+                  content={content}
+                  // index={index}
+                  // blogpostLength={blogpost.data.body.length}
+                />
               ))}
             </ul>
           </div>

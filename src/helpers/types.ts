@@ -14,10 +14,24 @@ type PostTextArr = {
   type: string;
   text: string;
 };
+
+type HyperLinkData = {
+  link_type: string;
+  url: string;
+  target: string | null;
+};
+
+type SpansText = {
+  start: number;
+  end: number;
+  type: string;
+  data: HyperLinkData;
+};
+
 export type PostText = {
   type: string;
   text: [PostTextArr];
-  spans: [];
+  spans: [SpansText];
 };
 
 export type PostImage = {
@@ -29,9 +43,6 @@ export type PostImage = {
       height: number;
     };
     url: string;
-    type: string;
-    text: string;
-    spans: [];
   };
 };
 

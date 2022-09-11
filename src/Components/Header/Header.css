@@ -39,4 +39,5 @@
 
 .inactive {
   border: none;
+  border-bottom: transparent solid 1px;
 }

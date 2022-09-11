@@ -7,7 +7,7 @@ import BlogPage from "./Components/Blog/BlogPage";
 import BlogPostPage from "./Components/Blog/BlogPostPage";
 import SubscribePage from "./Components/Subscribe/SubscribePage";
 import ShopPage from "./Components/Shop/ShopPage";
-
+import Preview from "./Components/Preview/Preview";
 import "./index.css";
 
 const App: React.FC = () => {
@@ -27,6 +27,7 @@ const App: React.FC = () => {
         <Route path='/blog/:uid' element={<BlogPostPage />} />
         <Route path='/subscribe' element={<SubscribePage />} />
         <Route path='/shop' element={<ShopPage />} />
+        <Route path='/preview' element={<Preview />} />
       </Routes>
     </div>
   );

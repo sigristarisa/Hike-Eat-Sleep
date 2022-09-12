@@ -27,6 +27,7 @@ const SubscribePage: React.FC = () => {
             name='email'
             className='subscribe-form-input'
             placeholder='hello@wanderfux.com'
+            required
           />
           <input type='submit' value='SUBSCRIBE' />
         </form>

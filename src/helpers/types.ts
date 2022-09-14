@@ -30,8 +30,8 @@ type SpansText = {
 
 export type PostText = {
   type: string;
-  text: [PostTextArr];
-  spans: [SpansText];
+  text: any;
+  spans: SpansText[] | [];
 };
 
 export type PostImage = {
@@ -54,8 +54,8 @@ export type PostBody = {
 };
 
 export type BlogPostData = {
-  post_title: [PostTitle];
-  body: [PostBody];
+  post_title: PostTitle[];
+  body: PostBody[];
 };
 
 export interface BlogPost {
@@ -67,7 +67,7 @@ export interface BlogPost {
   lang: string;
   last_publication_date: string;
   linked_documents: [];
-  slugs: [string];
+  slugs: string[];
   tags: [];
   type: string;
   uid: string;

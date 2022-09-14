@@ -10,11 +10,6 @@ type PostTitle = {
   type: string;
 };
 
-type PostTextArr = {
-  type: string;
-  text: string;
-};
-
 type HyperLinkData = {
   link_type: string;
   url: string;

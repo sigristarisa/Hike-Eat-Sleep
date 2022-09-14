@@ -8,7 +8,8 @@ import BlogPostPage from "./Components/Blog/BlogPostPage";
 import SubscribePage from "./Components/Subscribe/SubscribePage";
 import ShopPage from "./Components/Shop/ShopPage";
 import Preview from "./Components/Preview/Preview";
-import "./index.css";
+import "./Styles/index.css";
+import "./Styles/layout.css";
 
 const App: React.FC = () => {
   const [navBtnId, setNavBtnId] = useState<number>(0);

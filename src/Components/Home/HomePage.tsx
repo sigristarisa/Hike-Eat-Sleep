@@ -9,7 +9,7 @@ const HomePage: React.FC = () => {
       <div className='home-logo_container'>
         <img src={hikeEatSleepLogo} alt='hike eat sleep logo' />
       </div>
-      <div className='header-img_container  align-items_end'>
+      <div className='header-img_container  align-items_end justify-items_center'>
         <img src={hikeEatSleepHeader} alt='hike eat sleep header' />
       </div>
     </main>

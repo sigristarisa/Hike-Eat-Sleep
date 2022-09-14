@@ -1,0 +1,49 @@
+.grid-columns_two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-columns_two-extend-one {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.grid-columns_two-extend-auto {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.grid-columns_four {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.justify-items_start {
+  display: grid;
+  justify-items: start;
+}
+
+.justify-items_center {
+  display: grid;
+  justify-items: center;
+}
+
+.justify-items_end {
+  display: grid;
+  justify-items: end;
+}
+
+.align-items_center {
+  display: grid;
+  align-items: center;
+}
+
+.align-items_end {
+  display: grid;
+  align-items: end;
+}
+
+.place-items_center {
+  display: grid;
+  place-items: center;
+}

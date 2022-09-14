@@ -1,28 +1,30 @@
 .home-main_container {
   width: 100vw;
+  height: 76vh;
   margin-top: 24vh;
   position: fixed;
 }
 
 .home-logo_container {
-  width: 30vw;
-  height: 30vh;
-  position: relative;
-  left: -16vw;
-  top: 14vh;
+  width: 12vw;
+  height: auto;
+  position: absolute;
+  left: 20%;
+  bottom: 64%;
   z-index: 1;
 }
 
 .home-logo_container img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .header-img_container {
   width: 96vw;
+  position: relative;
 }
 
 .header-img_container img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  height: auto;
 }

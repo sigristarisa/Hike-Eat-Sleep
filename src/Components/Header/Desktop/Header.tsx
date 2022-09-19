@@ -19,7 +19,7 @@ const Header: React.FC<props> = ({ setNavBtnId, activateNavBtn }) => {
   return (
     <header className='header_container justify-items_end'>
       <nav className='navbar_container place-items_center'>
-        <ul className='grid-columns_four place-items_center'>
+        <ul className='grid-columns_four-expand-one place-items_center'>
           {navButtonArr.map((navButton, index) => (
             <NavButtonItem
               navButton={navButton}

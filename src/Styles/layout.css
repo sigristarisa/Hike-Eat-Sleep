@@ -18,9 +18,9 @@
   grid-template-columns: auto 1fr;
 }
 
-.grid-columns_four {
+.grid-columns_four-expand-one {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1.5fr repeat(3, 1fr);
 }
 
 .justify-items_start {

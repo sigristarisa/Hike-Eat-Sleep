@@ -8,7 +8,7 @@
 
 .navbar_container {
   width: 25vw;
-  min-width: 20vw;
+  /* border: green 1px solid; */
 }
 
 .navbar_container ul {
@@ -17,23 +17,27 @@
   min-width: 100%;
   height: 100%;
   margin: 0;
+  /* border: red 1px solid; */
 }
 
 .navBtn-item {
-  width: 100%;
+  min-width: 100%;
+  /* border: blue solid 1px; */
 }
 
 .dot {
-  min-width: 32px;
-  margin: 0 8px;
+  width: auto;
+  /* border: red solid 1px; */
 }
 
 .navBtn-item button {
+  min-width: 100%;
   height: 100px;
   padding: 0;
   font-family: "Roboto Mono", monospace;
   font-size: var(--font-xs);
   background-color: transparent;
+  /* border: black solid 1px; */
 }
 
 .active,

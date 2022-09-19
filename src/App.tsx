@@ -38,7 +38,7 @@ const App: React.FC = () => {
 
   return (
     <div className='App'>
-      {windowSize.innerWidth > 420 ? (
+      {windowSize.innerWidth > 600 ? (
         <Header setNavBtnId={setNavBtnId} activateNavBtn={activateNavBtn} />
       ) : (
         <HeaderMobile />

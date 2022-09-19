@@ -9,13 +9,14 @@
 .navbar_container {
   width: 25vw;
   min-width: 20vw;
-  height: 100%;
-  margin: 0;
 }
 
 .navbar_container ul {
   padding: 0 1vw;
   list-style: none;
+  min-width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
 .navBtn-item {
@@ -23,7 +24,7 @@
 }
 
 .dot {
-  width: 32px;
+  min-width: 32px;
   margin: 0 8px;
 }
 

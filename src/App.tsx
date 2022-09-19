@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-import Header from "./Components/Header/Header";
-import HeaderMobile from "./Components/Header/HeaderMobile";
+import Header from "./Components/Header/Desktop/Header";
+import HeaderMobile from "./Components/Header/Mobile/HeaderMobile";
+import NavPage from "./Components/Header/Mobile/NavPage";
 import HomePage from "./Components/Home/HomePage";
 import AboutPage from "./Components/About/AboutPage";
 import BlogPage from "./Components/Blog/BlogPage";
@@ -38,16 +39,13 @@ const App: React.FC = () => {
   return (
     <div className='App'>
       {windowSize.innerWidth > 420 ? (
-        <Header
-          setNavBtnId={setNavBtnId}
-          activateNavBtn={activateNavBtn}
-          windowSize={windowSize}
-        />
+        <Header setNavBtnId={setNavBtnId} activateNavBtn={activateNavBtn} />
       ) : (
         <HeaderMobile />
       )}
       <Routes>
         <Route path='/' element={<HomePage />} />
+        <Route path='/navi' element={<NavPage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/blog' element={<BlogPage />} />
         <Route path='/blog/:uid' element={<BlogPostPage />} />

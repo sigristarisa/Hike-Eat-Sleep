@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { NavButton } from "../../helpers/types";
+import { NavButton } from "../../../helpers/types";
 
 interface props {
   navButton: NavButton;

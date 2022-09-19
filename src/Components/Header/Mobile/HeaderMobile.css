@@ -18,3 +18,24 @@
 .header-mobile_container button:hover {
   color: var(--red);
 }
+
+.nav-page_container {
+  width: 100vw;
+  height: 80vh;
+  background-color: var(--red);
+  font-size: var(--font-s);
+}
+
+.nav-page_container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-page_navBtn-item button {
+  background-color: transparent;
+  border: none;
+}
+
+.nav-page-dot {
+  height: 80px;
+}

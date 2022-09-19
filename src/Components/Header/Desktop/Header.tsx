@@ -1,19 +1,14 @@
 import React from "react";
 import NavButtonItem from "./NavButtonItem";
-import { NavButton, WindowSize } from "../../helpers/types";
+import { NavButton } from "../../../helpers/types";
 import "./Header.css";
 
 interface props {
   setNavBtnId: Function;
   activateNavBtn: Function;
-  windowSize: WindowSize;
 }
 
-const Header: React.FC<props> = ({
-  setNavBtnId,
-  activateNavBtn,
-  windowSize,
-}) => {
+const Header: React.FC<props> = ({ setNavBtnId, activateNavBtn }) => {
   const navButtonArr: NavButton[] = [
     { id: 0, name: "wanderfux", navigate: "../" },
     { id: 1, name: "about", navigate: "../about" },

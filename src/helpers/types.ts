@@ -1,3 +1,8 @@
+export type WindowSize = {
+  innerWidth: number;
+  innerHeight: number;
+};
+
 export type NavButton = {
   id: number;
   name: string;

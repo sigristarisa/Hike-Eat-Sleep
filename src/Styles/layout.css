@@ -13,6 +13,11 @@
   grid-template-columns: 1fr auto;
 }
 
+.grid-columns_one-extend-auto {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
 .grid-columns_four {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

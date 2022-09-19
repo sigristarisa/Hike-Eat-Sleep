@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./Components/Header/Header";
+import HeaderMobile from "./Components/Header/HeaderMobile";
 import HomePage from "./Components/Home/HomePage";
 import AboutPage from "./Components/About/AboutPage";
 import BlogPage from "./Components/Blog/BlogPage";
@@ -8,19 +9,43 @@ import BlogPostPage from "./Components/Blog/BlogPostPage";
 import SubscribePage from "./Components/Subscribe/SubscribePage";
 import ShopPage from "./Components/Shop/ShopPage";
 import Preview from "./Components/Preview/Preview";
+import { WindowSize } from "./helpers/types";
 import "./Styles/index.css";
 import "./Styles/layout.css";
 
 const App: React.FC = () => {
+  const getWindowSize = (): WindowSize => {
+    const { innerWidth, innerHeight } = window;
+    return { innerWidth, innerHeight };
+  };
+
   const [navBtnId, setNavBtnId] = useState<number>(0);
+  const [windowSize, setWindowSize] = useState<WindowSize>(getWindowSize());
 
   const activateNavBtn = (index: number): string => {
     return navBtnId === index ? "active" : "inactive";
   };
 
+  useEffect(() => {
+    const handleWindowResize = (): void => setWindowSize(getWindowSize());
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
   return (
     <div className='App'>
-      <Header setNavBtnId={setNavBtnId} activateNavBtn={activateNavBtn} />
+      {windowSize.innerWidth > 420 ? (
+        <Header
+          setNavBtnId={setNavBtnId}
+          activateNavBtn={activateNavBtn}
+          windowSize={windowSize}
+        />
+      ) : (
+        <HeaderMobile />
+      )}
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />

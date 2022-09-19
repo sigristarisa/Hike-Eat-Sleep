@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./Components/Header/Desktop/Header";
 import HeaderMobile from "./Components/Header/Mobile/HeaderMobile";
 import NavPage from "./Components/Header/Mobile/NavPage";
-import HomePage from "./Components/Home/HomePage";
+import HomePage from "./Components/Home/Desktop/HomePage";
 import AboutPage from "./Components/About/AboutPage";
 import BlogPage from "./Components/Blog/BlogPage";
 import BlogPostPage from "./Components/Blog/BlogPostPage";

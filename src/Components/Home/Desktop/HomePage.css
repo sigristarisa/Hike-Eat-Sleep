@@ -5,12 +5,16 @@
   position: fixed;
 }
 
+.home-logo-img_wrapper {
+  position: relative;
+}
+
 .home-logo_container {
   width: 12vw;
   height: auto;
   position: absolute;
   left: 20%;
-  bottom: 64%;
+  top: -36%;
   z-index: 1;
 }
 
@@ -19,12 +23,11 @@
   height: auto;
 }
 
-.header-img_container {
+.home-img_container {
   width: 96vw;
-  position: relative;
 }
 
-.header-img_container img {
+.home-img_container img {
   width: 100%;
   height: auto;
 }

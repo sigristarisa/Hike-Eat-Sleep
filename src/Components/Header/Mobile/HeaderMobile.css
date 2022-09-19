@@ -2,7 +2,10 @@
   width: 100vw;
   height: 20vh;
   padding: 4vw;
-  border: 1px red solid;
+}
+
+.red-background {
+  background-color: var(--red);
 }
 
 .header-mobile_container h1 {
@@ -13,10 +16,6 @@
   border: none;
   background-color: transparent;
   font-size: var(--font-s);
-}
-
-.header-mobile_container button:hover {
-  color: var(--red);
 }
 
 .nav-page_container {

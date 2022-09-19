@@ -3,7 +3,11 @@ import NavPageNavItem from "./NavPageNavItem";
 import { NavButton } from "../../../helpers/types";
 import "./HeaderMobile.css";
 
-const NavPage: React.FC = () => {
+interface props {
+  setIsNavPage: Function;
+}
+
+const NavPage: React.FC<props> = ({ setIsNavPage }) => {
   const navButtonArr: NavButton[] = [
     { id: 0, name: "about", navigate: "../about" },
     { id: 1, name: "blog", navigate: "../blog" },
@@ -14,7 +18,12 @@ const NavPage: React.FC = () => {
       <nav>
         <ul>
           {navButtonArr.map((navButton, index) => (
-            <NavPageNavItem key={index} navButton={navButton} index={index} />
+            <NavPageNavItem
+              key={index}
+              navButton={navButton}
+              index={index}
+              setIsNavPage={setIsNavPage}
+            />
           ))}
         </ul>
       </nav>

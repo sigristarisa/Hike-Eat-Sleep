@@ -5,15 +5,22 @@ import { NavButton } from "../../../helpers/types";
 interface props {
   navButton: NavButton;
   index: number;
+  setIsNavPage: Function;
 }
 
-const NavPageNavItem: React.FC<props> = ({ navButton, index }) => {
+const NavPageNavItem: React.FC<props> = ({
+  navButton,
+  index,
+  setIsNavPage,
+}) => {
   const navigate = useNavigate();
+  const closeNavPage = (navBtn: NavButton): void => {
+    setIsNavPage(false);
+    navigate(navBtn.navigate);
+  };
   return (
     <li className='nav-page_navBtn-item place-items_center'>
-      <button onClick={() => navigate(`${navButton.navigate}`)}>
-        {navButton.name}
-      </button>
+      <button onClick={() => closeNavPage(navButton)}>{navButton.name}</button>
       {index === 2 ? (
         <span></span>
       ) : (

@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from "../Footer/Footer";
-import hikeEatSleepLogo from "../../assets/HikeEatSleep_Logo.png";
-import hikeEatSleepAbout from "../../assets/HikeEatSleep_About.png";
+import Footer from "../../Footer/Footer";
+import hikeEatSleepLogo from "../../../assets/HikeEatSleep_Logo.png";
+import hikeEatSleepAbout from "../../../assets/HikeEatSleep_About.png";
 import "./AboutPage.css";
 
 const AboutPage: React.FC = () => {

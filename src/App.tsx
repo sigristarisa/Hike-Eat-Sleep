@@ -5,7 +5,8 @@ import HeaderMobile from "./Components/Header/Mobile/HeaderMobile";
 import NavPage from "./Components/Header/Mobile/NavPage";
 import HomePage from "./Components/Home/Desktop/HomePage";
 import HomePageMobile from "./Components/Home/Mobile/HomePageMobile";
-import AboutPage from "./Components/About/AboutPage";
+import AboutPage from "./Components/About/Desktop/AboutPage";
+import AboutPageMobile from "./Components/About/Mobile/AboutPageMobile";
 import BlogPage from "./Components/Blog/BlogPage";
 import BlogPostPage from "./Components/Blog/BlogPostPage";
 import SubscribePage from "./Components/Subscribe/SubscribePage";
@@ -23,6 +24,7 @@ const App: React.FC = () => {
 
   const [navBtnId, setNavBtnId] = useState<number>(0);
   const [windowSize, setWindowSize] = useState<WindowSize>(getWindowSize());
+  const [isNavPage, setIsNavPage] = useState<boolean>(false);
 
   const activateNavBtn = (index: number): string => {
     return navBtnId === index ? "active" : "inactive";
@@ -42,8 +44,11 @@ const App: React.FC = () => {
       {windowSize.innerWidth > 600 ? (
         <Header setNavBtnId={setNavBtnId} activateNavBtn={activateNavBtn} />
       ) : (
-        <HeaderMobile />
+        <HeaderMobile isNavPage={isNavPage} setIsNavPage={setIsNavPage} />
       )}
+
+      {isNavPage && <NavPage setIsNavPage={setIsNavPage} />}
+
       <Routes>
         <Route
           path='/'
@@ -51,8 +56,12 @@ const App: React.FC = () => {
             windowSize.innerWidth > 600 ? <HomePage /> : <HomePageMobile />
           }
         />
-        <Route path='/navi' element={<NavPage />} />
-        <Route path='/about' element={<AboutPage />} />
+        <Route
+          path='/about'
+          element={
+            windowSize.innerWidth > 600 ? <AboutPage /> : <AboutPageMobile />
+          }
+        />
         <Route path='/blog' element={<BlogPage />} />
         <Route path='/blog/:uid' element={<BlogPostPage />} />
         <Route path='/subscribe' element={<SubscribePage />} />

@@ -23,6 +23,8 @@
   height: 80vh;
   background-color: var(--red);
   font-size: var(--font-s);
+  position: fixed;
+  z-index: 1;
 }
 
 .nav-page_container ul {

@@ -1,7 +1,20 @@
-@media screen and (max-width: 1000px) {
-  .header_container {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    place-items: center;
-  }
+.header-mobile_container {
+  width: 100vw;
+  height: 20vh;
+  padding: 4vw;
+  border: 1px red solid;
+}
+
+.header-mobile_container h1 {
+  font-size: var(--font-s);
+}
+
+.header-mobile_container button {
+  border: none;
+  background-color: transparent;
+  font-size: var(--font-s);
+}
+
+.header-mobile_container button:hover {
+  color: var(--red);
 }

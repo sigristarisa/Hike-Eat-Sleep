@@ -1,6 +1,6 @@
 import React from "react";
 import hikeEatSleepLogo from "../../../assets/HikeEatSleep_Logo.png";
-import hikeEatSleepHeader from "../../../assets/HikeEatSleep_Header.png";
+import hikeEatSleepHome from "../../../assets/HikeEatSleep_Home.png";
 import "./HomePage.css";
 
 const HomePage: React.FC = () => {
@@ -11,7 +11,7 @@ const HomePage: React.FC = () => {
           <img src={hikeEatSleepLogo} alt='hike eat sleep logo' />
         </div>
         <div className='home-img_container  align-items_end justify-items_center'>
-          <img src={hikeEatSleepHeader} alt='hike eat sleep header' />
+          <img src={hikeEatSleepHome} alt='hike eat sleep header' />
         </div>
       </div>
     </main>

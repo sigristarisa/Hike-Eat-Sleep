@@ -1,0 +1,33 @@
+.home-page-mobile_container {
+  width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.home-mobile-logo-img_wrapper {
+  position: relative;
+  margin-top: 30vh;
+}
+
+.home-mobile-logo_container {
+  width: 24vw;
+  height: auto;
+  position: absolute;
+  right: 20%;
+  top: -16%;
+  z-index: 1;
+}
+
+.home-mobile-logo_container img {
+  width: 100%;
+  height: auto;
+}
+
+.home-mobile-image_container {
+  width: 88vw;
+  height: 100%;
+}
+
+.home-mobile-image_container img {
+  width: 100%;
+}

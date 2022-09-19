@@ -4,6 +4,7 @@ import Header from "./Components/Header/Desktop/Header";
 import HeaderMobile from "./Components/Header/Mobile/HeaderMobile";
 import NavPage from "./Components/Header/Mobile/NavPage";
 import HomePage from "./Components/Home/Desktop/HomePage";
+import HomePageMobile from "./Components/Home/Mobile/HomePageMobile";
 import AboutPage from "./Components/About/AboutPage";
 import BlogPage from "./Components/Blog/BlogPage";
 import BlogPostPage from "./Components/Blog/BlogPostPage";
@@ -44,7 +45,12 @@ const App: React.FC = () => {
         <HeaderMobile />
       )}
       <Routes>
-        <Route path='/' element={<HomePage />} />
+        <Route
+          path='/'
+          element={
+            windowSize.innerWidth > 600 ? <HomePage /> : <HomePageMobile />
+          }
+        />
         <Route path='/navi' element={<NavPage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/blog' element={<BlogPage />} />

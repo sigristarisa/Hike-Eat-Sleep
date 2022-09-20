@@ -2,6 +2,7 @@ import React from "react";
 import BlogListHeader from "./BlogListHeader";
 import BlogList from "./BlogList";
 import Footer from "../../Footer/Desktop/Footer";
+import FooterMobile from "../../Footer/Mobile/FooterMobile";
 import { WindowSize } from "../../../helpers/types";
 import hikeEatSleepLogo from "../../../assets/HikeEatSleep_Logo.png";
 import hikeEatSleepBlog from "../../../assets/HikeEatSleep_Blog.png";
@@ -11,13 +12,10 @@ import "../Mobile/BlogPageMobile.css";
 
 interface props {
   windowSize: WindowSize;
+  isMobile: Function;
 }
 
-const BlogPage: React.FC<props> = ({ windowSize }) => {
-  const isMobile = (): string => {
-    return windowSize.innerWidth > 600 ? "" : "-mobile";
-  };
-
+const BlogPage: React.FC<props> = ({ windowSize, isMobile }) => {
   return (
     <div className={`blog-page_container${isMobile()} place-items_center`}>
       <section className={`blog-list_container${isMobile()}`}>
@@ -36,7 +34,7 @@ const BlogPage: React.FC<props> = ({ windowSize }) => {
           )}
         </div>
       </div>
-      <Footer />
+      {windowSize.innerWidth > 600 ? <Footer /> : <FooterMobile />}
     </div>
   );
 };

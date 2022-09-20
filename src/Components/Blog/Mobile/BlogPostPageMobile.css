@@ -1,0 +1,22 @@
+.blog-post-page_container-mobile {
+  width: 100vw;
+  margin-top: 8vh;
+  font-size: var(--font-s);
+}
+
+.blog-post_container-mobile {
+  width: 96vw;
+  padding: 0 1vw;
+}
+
+.blog-post-header_container-mobile {
+  margin-bottom: 8vh;
+}
+
+.blog-post-header_container-mobile button {
+  padding: 0;
+  background-color: transparent;
+  font-family: "Roboto Mono", monospace;
+  font-size: var(--font-s);
+  border: none;
+}

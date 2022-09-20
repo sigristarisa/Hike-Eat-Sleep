@@ -2,10 +2,17 @@ import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import BlogPostContent from "./BlogPostContent";
 import Footer from "../../Footer/Desktop/Footer";
-import { BlogPost, Location } from "../../../helpers/types";
+import FooterMobile from "../../Footer/Mobile/FooterMobile";
+import { BlogPost, Location, WindowSize } from "../../../helpers/types";
 import "./BlogPostPage.css";
+import "../Mobile/BlogPostPageMobile.css";
 
-const BlogPostPage: React.FC = () => {
+interface props {
+  windowSize: WindowSize;
+  isMobile: Function;
+}
+
+const BlogPostPage: React.FC<props> = ({ windowSize, isMobile }) => {
   const [blogpost, setBlogPost] = useState<BlogPost>();
   const location = useLocation();
   const navigate = useNavigate();
@@ -16,10 +23,12 @@ const BlogPostPage: React.FC = () => {
   }, []);
 
   return (
-    <div className='blog-post-page_container place-items_center'>
+    <div className={`blog-post-page_container${isMobile()} place-items_center`}>
       {blogpost && (
-        <div className='blog-post_container'>
-          <header className='blog-post-header_container grid-columns_two-extend-auto'>
+        <div className={`blog-post_container${isMobile()}`}>
+          <header
+            className={`blog-post-header_container${isMobile()} grid-columns_two-extend-auto`}
+          >
             <p>{blogpost.data.post_title[0].text}</p>
             <button onClick={() => navigate("../blog")}>BACK TO BLOG</button>
           </header>
@@ -32,7 +41,7 @@ const BlogPostPage: React.FC = () => {
           </div>
         </div>
       )}
-      <Footer />
+      {windowSize.innerWidth > 600 ? <Footer /> : <FooterMobile />}
     </div>
   );
 };

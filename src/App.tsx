@@ -22,6 +22,10 @@ const App: React.FC = () => {
     return { innerWidth, innerHeight };
   };
 
+  const isMobile = (): string => {
+    return windowSize.innerWidth > 600 ? "" : "-mobile";
+  };
+
   const [navBtnId, setNavBtnId] = useState<number>(0);
   const [windowSize, setWindowSize] = useState<WindowSize>(getWindowSize());
   const [isNavPage, setIsNavPage] = useState<boolean>(false);
@@ -62,8 +66,14 @@ const App: React.FC = () => {
             windowSize.innerWidth > 600 ? <AboutPage /> : <AboutPageMobile />
           }
         />
-        <Route path='/blog' element={<BlogPage windowSize={windowSize} />} />
-        <Route path='/blog/:uid' element={<BlogPostPage />} />
+        <Route
+          path='/blog'
+          element={<BlogPage windowSize={windowSize} isMobile={isMobile} />}
+        />
+        <Route
+          path='/blog/:uid'
+          element={<BlogPostPage windowSize={windowSize} isMobile={isMobile} />}
+        />
         <Route path='/subscribe' element={<SubscribePage />} />
         <Route path='/shop' element={<ShopPage />} />
         <Route path='/preview' element={<Preview />} />

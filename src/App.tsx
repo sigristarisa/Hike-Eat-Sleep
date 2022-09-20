@@ -9,7 +9,7 @@ import AboutPage from "./Components/About/Desktop/AboutPage";
 import AboutPageMobile from "./Components/About/Mobile/AboutPageMobile";
 import BlogPage from "./Components/Blog/Desktop/BlogPage";
 import BlogPostPage from "./Components/Blog/Desktop/BlogPostPage";
-import SubscribePage from "./Components/Subscribe/SubscribePage";
+import SubscribePage from "./Components/Subscribe/Desktop/SubscribePage";
 import ShopPage from "./Components/Shop/ShopPage";
 import Preview from "./Components/Preview/Preview";
 import { WindowSize } from "./helpers/types";
@@ -74,7 +74,12 @@ const App: React.FC = () => {
           path='/blog/:uid'
           element={<BlogPostPage windowSize={windowSize} isMobile={isMobile} />}
         />
-        <Route path='/subscribe' element={<SubscribePage />} />
+        <Route
+          path='/subscribe'
+          element={
+            <SubscribePage windowSize={windowSize} isMobile={isMobile} />
+          }
+        />
         <Route
           path='/shop'
           element={<ShopPage windowSize={windowSize} isMobile={isMobile} />}

@@ -1,0 +1,24 @@
+.subscribe-page_container-mobile {
+  width: 100vw;
+}
+
+.subscribe-page_container-mobile main {
+  height: 56vh;
+}
+
+.subscribe-form-mobile {
+  width: 96vw;
+  height: 4vh;
+  padding-bottom: 6vh;
+  border-bottom: solid 1px black;
+}
+
+.subscribe-form-mobile input {
+  border: none;
+  background-color: transparent;
+  font-size: var(--font-s);
+}
+
+.subscribe-form-mobile input[type="submit"]:hover {
+  color: var(--red);
+}

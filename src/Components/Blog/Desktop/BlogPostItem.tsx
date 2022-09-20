@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { BlogPost } from "../../helpers/types";
+import { BlogPost } from "../../../helpers/types";
 
 interface Props {
   blogpost: BlogPost;

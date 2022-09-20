@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import BlogPostContent from "./BlogPostContent";
-import Footer from "../Footer/Desktop/Footer";
-import { BlogPost, Location } from "../../helpers/types";
+import Footer from "../../Footer/Desktop/Footer";
+import { BlogPost, Location } from "../../../helpers/types";
 import "./BlogPostPage.css";
 
 const BlogPostPage: React.FC = () => {

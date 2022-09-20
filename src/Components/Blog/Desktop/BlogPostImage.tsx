@@ -1,5 +1,5 @@
 import React from "react";
-import { PostBody, PostImage } from "../../helpers/types";
+import { PostBody, PostImage } from "../../../helpers/types";
 
 interface Props {
   content: PostBody;

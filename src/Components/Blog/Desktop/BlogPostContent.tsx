@@ -1,7 +1,7 @@
 import React from "react";
 import { PrismicRichText } from "@prismicio/react";
 
-import { PostBody, PostText } from "../../helpers/types";
+import { PostBody, PostText } from "../../../helpers/types";
 import BlogPostImage from "./BlogPostImage";
 
 interface Props {

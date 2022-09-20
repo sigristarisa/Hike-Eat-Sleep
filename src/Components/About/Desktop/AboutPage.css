@@ -8,18 +8,23 @@
   margin-top: 20vh;
 }
 
-.about-logo_container {
-  width: 30vw;
-  height: 30vh;
+.about-logo-img_wrapper {
   position: relative;
-  left: 32vw;
-  top: 14vh;
+  margin-top: 20vh;
+}
+
+.about-logo_container {
+  width: 12vw;
+  height: auto;
+  position: absolute;
+  left: 80%;
+  top: -20%;
   z-index: 1;
 }
 
 .about-logo_container img {
   max-width: 100%;
-  max-height: 100%;
+  height: auto;
 }
 
 .about-img_container {

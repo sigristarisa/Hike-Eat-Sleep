@@ -19,11 +19,13 @@ const AboutPage: React.FC = () => {
           </p>
           <p>wanderfux, switzerland</p>
         </div>
-        <div className='about-logo_container'>
-          <img src={hikeEatSleepLogo} alt='hike eat sleep logo' />
-        </div>
-        <div className='about-img_container'>
-          <img src={hikeEatSleepAbout} alt='hike eat sleep about' />
+        <div className='about-logo-img_wrapper'>
+          <div className='about-logo_container'>
+            <img src={hikeEatSleepLogo} alt='hike eat sleep logo' />
+          </div>
+          <div className='about-img_container'>
+            <img src={hikeEatSleepAbout} alt='hike eat sleep about' />
+          </div>
         </div>
       </main>
       <Footer />

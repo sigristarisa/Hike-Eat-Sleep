@@ -1,7 +1,7 @@
 import React from "react";
 import { useAllPrismicDocumentsByType } from "@prismicio/react";
 import BlogPostItem from "./BlogPostItem";
-import { BlogPost } from "../../helpers/types";
+import { BlogPost } from "../../../helpers/types";
 
 const BlogList: React.FC = () => {
   const [blogposts] = useAllPrismicDocumentsByType<BlogPost>("blogpost");

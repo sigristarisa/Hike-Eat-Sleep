@@ -30,16 +30,9 @@
   list-style: none;
 }
 
-.blog-img_container {
-  width: 96vw;
-}
-
-.blog-img_container img {
-  max-width: 100%;
-}
-
 .blog-logo-img_wrapper {
   position: relative;
+  margin-top: 16vh;
 }
 
 .blog-logo_container {
@@ -52,6 +45,15 @@
 }
 
 .blog-logo_container img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-img_container {
+  width: 96vw;
+}
+
+.blog-img_container img {
   width: 100%;
   height: auto;
 }

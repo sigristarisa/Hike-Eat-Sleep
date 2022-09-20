@@ -3,3 +3,10 @@
   height: 56vh;
   margin-top: 24vh;
 }
+
+.shop-main_container-mobile {
+  width: 100vw;
+  height: 56vh;
+  margin-top: 24vh;
+  font-size: var(--font-s);
+}

@@ -75,7 +75,10 @@ const App: React.FC = () => {
           element={<BlogPostPage windowSize={windowSize} isMobile={isMobile} />}
         />
         <Route path='/subscribe' element={<SubscribePage />} />
-        <Route path='/shop' element={<ShopPage />} />
+        <Route
+          path='/shop'
+          element={<ShopPage windowSize={windowSize} isMobile={isMobile} />}
+        />
         <Route path='/preview' element={<Preview />} />
       </Routes>
     </div>

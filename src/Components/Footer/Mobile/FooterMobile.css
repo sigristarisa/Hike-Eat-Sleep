@@ -1,0 +1,11 @@
+.footer-mobile_container {
+  width: 100vw;
+  height: 20vh;
+  padding: 0 6vw;
+  margin: 6vh 0;
+}
+
+.footer-text-mobile_container p,
+.footer-mobile_container a {
+  font-size: var(--font-s);
+}

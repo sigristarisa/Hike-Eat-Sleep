@@ -1,7 +1,7 @@
 import React from "react";
 import BlogListHeader from "./BlogListHeader";
 import BlogList from "./BlogList";
-import Footer from "../Footer/Footer";
+import Footer from "../Footer/Desktop/Footer";
 import hikeEatSleepLogo from "../../assets/HikeEatSleep_Logo.png";
 import hikeEatSleepBlog from "../../assets/HikeEatSleep_Blog.png";
 

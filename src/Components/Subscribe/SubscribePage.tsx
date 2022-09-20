@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Footer from "../Footer/Footer";
+import Footer from "../Footer/Desktop/Footer";
 import "./SubscribePage.css";
 
 const SubscribePage: React.FC = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../Footer/Footer";
+import Footer from "../Footer/Desktop/Footer";
 import "./ShopPage.css";
 
 const ShopPage: React.FC = () => {

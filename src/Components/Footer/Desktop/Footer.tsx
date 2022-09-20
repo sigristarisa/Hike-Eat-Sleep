@@ -1,6 +1,6 @@
 import React from "react";
-import iconInstagram from "../../assets/icon_instagram.png";
-import iconYoutube from "../../assets/icon_youtube.png";
+import iconInstagram from "../../../assets/icon_instagram.png";
+import iconYoutube from "../../../assets/icon_youtube.png";
 
 import "./Footer.css";
 

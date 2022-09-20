@@ -3,6 +3,12 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
+.grid-colums_two-extend-two {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 8px;
+}
+
 .grid-columns_two-extend-one {
   display: grid;
   grid-template-columns: 3fr 1fr;

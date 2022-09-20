@@ -1,4 +1,5 @@
 import React from "react";
+import FooterMobile from "../../Footer/Mobile/FooterMobile";
 import hikeEatSleepLogo from "../../../assets/HikeEatSleep_Logo.png";
 import hikeEatSleepAboutMobile from "../../../assets/HikeEatSleep_AboutMobile.png";
 import "./AboutPageMobile.css";
@@ -27,6 +28,7 @@ const AboutPageMobile: React.FC = () => {
           </div>
         </div>
       </main>
+      <FooterMobile />
     </div>
   );
 };

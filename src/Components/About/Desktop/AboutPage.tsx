@@ -1,5 +1,5 @@
 import React from "react";
-import Footer from "../../Footer/Footer";
+import Footer from "../../Footer/Desktop/Footer";
 import hikeEatSleepLogo from "../../../assets/HikeEatSleep_Logo.png";
 import hikeEatSleepAbout from "../../../assets/HikeEatSleep_About.png";
 import "./AboutPage.css";

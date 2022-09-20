@@ -11,18 +11,21 @@ const FooterMobile: React.FC = () => {
           ©2020 ・ wanderfux ・<br></br> switzerland ・ Impressum
         </p>
       </div>
-      <div className='grid-columns_two justify-items_center'>
-        <div className='grid-colums_two-extend-two'>
-          <div className='footer-social-media-icon-mobile_container '>
+      <div className='hello grid-columns_two align-items_center'>
+        <div className=' hi grid-colums_two-extend-two'>
+          <div className='footer-social-media-icon-mobile_container justify-items_start'>
             <img src={iconInstagram} alt='instagram' />
           </div>
           <a href='https://www.instagram.com/by.wanderfux'>@by.wanderfux</a>
         </div>
-        <div className='grid-colums_two-extend-two '>
-          <div className='footer-social-media-icon-mobile_container '>
+        <div className='hi grid-colums_two-extend-two '>
+          <div className='footer-social-media-icon-mobile_container justify-items_start'>
             <img src={iconYoutube} alt='youtube' />
           </div>
-          <a href='https://www.youtube.com/channel/UCboUr2INTVh84ba0yoElbyw/featured'>
+          <a
+            className='place-items_center'
+            href='https://www.youtube.com/channel/UCboUr2INTVh84ba0yoElbyw/featured'
+          >
             @wanderfux
           </a>
         </div>

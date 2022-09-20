@@ -9,3 +9,12 @@
 .footer-mobile_container a {
   font-size: var(--font-s);
 }
+
+.hi {
+  width: 100%;
+}
+
+.hello {
+  width: 100%;
+  height: 100%;
+}

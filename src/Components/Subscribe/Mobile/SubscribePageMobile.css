@@ -1,9 +1,6 @@
 .subscribe-page_container-mobile {
   width: 100vw;
-}
-
-.subscribe-page_container-mobile main {
-  height: 56vh;
+  height: 60vh;
 }
 
 .subscribe-form-mobile {

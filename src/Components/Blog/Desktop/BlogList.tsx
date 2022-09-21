@@ -6,6 +6,21 @@ import { BlogPost } from "../../../helpers/types";
 const BlogList: React.FC = () => {
   const [blogposts] = useAllPrismicDocumentsByType<BlogPost>("blogpost");
 
+  if (blogposts) {
+    blogposts.sort((blogpostOne, blogpostTwo) => {
+      const dateOne: string = blogpostOne.first_publication_date
+        .split("T")[0]
+        .split("-")
+        .join("");
+      const dateTwo: string = blogpostTwo.first_publication_date
+        .split("T")[0]
+        .split("-")
+        .join("");
+      return dateTwo.localeCompare(dateOne);
+    });
+  }
+
+  console.log(blogposts);
   return (
     <div>
       <ul className='blog-list'>

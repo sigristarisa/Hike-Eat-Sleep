@@ -20,7 +20,6 @@ const BlogList: React.FC = () => {
     });
   }
 
-  console.log(blogposts);
   return (
     <div>
       <ul className='blog-list'>

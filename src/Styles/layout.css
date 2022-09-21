@@ -10,7 +10,7 @@
 
 .grid-columns_two-extend-one {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
 }
 
 .grid-columns_two-extend-auto {

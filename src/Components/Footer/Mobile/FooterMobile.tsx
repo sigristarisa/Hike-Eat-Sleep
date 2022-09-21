@@ -1,6 +1,6 @@
 import React from "react";
-import iconInstagram from "../../../assets/icon_instagram.png";
-import iconYoutube from "../../../assets/icon_youtube.png";
+import iconInstagram from "../../../assets/icon_instagram.svg";
+import iconYoutube from "../../../assets/icon_youtube.svg";
 import "./FooterMobile.css";
 
 const FooterMobile: React.FC = () => {
@@ -11,14 +11,14 @@ const FooterMobile: React.FC = () => {
           ©2020 ・ wanderfux ・<br></br> switzerland ・ Impressum
         </p>
       </div>
-      <div className='hello grid-columns_two align-items_center'>
-        <div className=' hi grid-colums_two-extend-two'>
+      <div className='footer-social-media-mobile_wrapper grid-columns_two align-items_center'>
+        <div className='footer-social-media-mobile_container grid-colums_two-extend-two align-items_center'>
           <div className='footer-social-media-icon-mobile_container justify-items_start'>
             <img src={iconInstagram} alt='instagram' />
           </div>
           <a href='https://www.instagram.com/by.wanderfux'>@by.wanderfux</a>
         </div>
-        <div className='hi grid-colums_two-extend-two '>
+        <div className='footer-social-media-mobile_container grid-colums_two-extend-two align-items_center'>
           <div className='footer-social-media-icon-mobile_container justify-items_start'>
             <img src={iconYoutube} alt='youtube' />
           </div>

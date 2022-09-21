@@ -6,6 +6,6 @@
 
 .shop-main_container-mobile {
   width: 100vw;
-  height: 56vh;
+  height: 100vh;
   font-size: var(--font-s);
 }

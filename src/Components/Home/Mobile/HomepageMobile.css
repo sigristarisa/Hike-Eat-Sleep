@@ -1,12 +1,12 @@
 .home-page-mobile_container {
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   overflow: hidden;
 }
 
 .home-mobile-logo-img_wrapper {
   position: relative;
-  margin-top: 30vh;
+  margin-top: 40vh;
 }
 
 .home-mobile-logo_container {

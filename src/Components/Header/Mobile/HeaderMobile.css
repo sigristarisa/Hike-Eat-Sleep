@@ -2,10 +2,8 @@
   width: 100vw;
   height: 20vh;
   padding: 4vw;
-}
-
-.red-background {
-  background-color: var(--red);
+  z-index: 3;
+  position: fixed;
 }
 
 .header-mobile_container h1 {
@@ -20,11 +18,9 @@
 
 .nav-page_container {
   width: 100vw;
-  height: 80vh;
-  background-color: var(--red);
+  height: 100vh;
+  background-color: transparent;
   font-size: var(--font-s);
-  position: fixed;
-  z-index: 1;
 }
 
 .nav-page_container ul {
@@ -39,4 +35,28 @@
 
 .nav-page-dot {
   height: 80px;
+}
+
+.hi {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--red);
+  border-radius: 0;
+  animation: navPagePopUp 0.7s;
+  position: fixed;
+  z-index: 2;
+}
+
+@keyframes navPagePopUp {
+  from {
+    transform: scale(0%);
+    transform-origin: 90vw 10vh;
+    border-radius: 25%;
+  }
+
+  to {
+    transform: scale(100%);
+    transform-origin: 90vw 10vh;
+    border-radius: 0%;
+  }
 }

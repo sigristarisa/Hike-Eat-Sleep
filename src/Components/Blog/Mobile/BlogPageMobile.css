@@ -1,10 +1,12 @@
 .blog-page_container-mobile {
   width: 100vw;
+  height: 100vh;
   font-size: var(--font-s);
 }
 
 .blog-list_container-mobile {
   width: 96vw;
+  margin-top: 30vh;
   padding: 0 1vw;
 }
 

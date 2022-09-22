@@ -1,3 +1,10 @@
+export type Subscriber = {
+  email: string;
+  date: Date;
+  city: string;
+  country: string;
+};
+
 export type WindowSize = {
   innerWidth: number;
   innerHeight: number;

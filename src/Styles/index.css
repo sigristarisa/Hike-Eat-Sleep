@@ -26,7 +26,6 @@ button {
 input {
   font-family: "Roboto Mono", monospace;
   cursor: pointer;
-  letter-spacing: 0.1em;
   line-height: 2em;
 }
 
@@ -37,7 +36,6 @@ input:focus {
 h1,
 p {
   margin: 0;
-  letter-spacing: 0.1em;
   line-height: 2em;
 }
 
@@ -45,7 +43,6 @@ a {
   cursor: pointer;
   color: black;
   text-decoration: none;
-  letter-spacing: 0.1em;
   line-height: 2em;
 }
 

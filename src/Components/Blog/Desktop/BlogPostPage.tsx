@@ -30,7 +30,7 @@ const BlogPostPage: React.FC<props> = ({ windowSize, isMobile }) => {
             className={`blog-post-header_container${isMobile()} grid-columns_two-extend-auto`}
           >
             <p>{blogpost.data.post_title[0].text}</p>
-            <button onClick={() => navigate("../blog")}>BACK TO BLOG</button>
+            <button onClick={() => navigate("../blog")}>close article</button>
           </header>
           <div className='blog-post-content_container'>
             <ul>

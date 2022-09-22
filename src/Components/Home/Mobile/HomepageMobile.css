@@ -6,21 +6,20 @@
 
 .home-mobile-logo-img_wrapper {
   position: relative;
-  margin-top: 40vh;
+  margin-top: 50vh;
 }
 
 .home-mobile-logo_container {
-  width: 24vw;
+  width: 32vw;
   height: auto;
   position: absolute;
-  right: 20%;
-  top: -16%;
+  right: 12%;
+  top: -24%;
   z-index: 1;
 }
 
 .home-mobile-logo_container img {
   width: 100%;
-  height: auto;
 }
 
 .home-mobile-image_container {

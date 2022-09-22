@@ -10,7 +10,7 @@
 }
 
 .blog-list-header_container {
-  height: 8vh;
+  height: 20vh;
 }
 
 .blog-list-header_container button {
@@ -33,7 +33,6 @@
   width: 96vw;
   margin-top: 16vh;
   position: relative;
-  border: 1px solid green;
 }
 
 .blog-logo_container {
@@ -59,7 +58,7 @@
 }
 
 .blog-post-item_container {
-  height: 10vh;
+  height: 20vh;
 }
 
 .blog-post-item_container-underline {

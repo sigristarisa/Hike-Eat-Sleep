@@ -58,7 +58,7 @@ const SubscribePage: React.FC<props> = ({ windowSize, isMobile }) => {
             onSubmit={submitEmail}
             ref={formRef}
             id='subscriptionForm'
-            className={`subscribe-form${isMobile()} grid-columns_two-extend-auto`}
+            className={`subscribe-form${isMobile()} grid-columns_two-extend-auto align-items_center`}
           >
             <input
               type='email'

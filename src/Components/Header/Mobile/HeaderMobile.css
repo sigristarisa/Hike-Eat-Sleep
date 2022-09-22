@@ -1,17 +1,19 @@
 .header-mobile_container {
   width: 100vw;
   height: 20vh;
-  padding: 4vw;
+  padding: 6vw;
   z-index: 3;
   position: fixed;
 }
 
 .header-mobile_container h1 {
-  font-size: var(--font-s);
+  font-size: 16px;
   font-weight: 400;
 }
 
 .header-mobile_container button {
+  padding: 0;
+  font-size: 16px;
   border: none;
   background-color: transparent;
 }
@@ -28,6 +30,7 @@
 }
 
 .nav-page_navBtn-item button {
+  font-size: 16px;
   background-color: transparent;
   border: none;
 }

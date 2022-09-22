@@ -4,19 +4,20 @@
 }
 
 .blog-list_container-mobile {
-  width: 96vw;
+  width: 100vw;
   margin-top: 30vh;
-  padding: 0 1vw;
+  padding: 0 6vw;
 }
 
 .blog-list-header_container-mobile {
-  height: 8vh;
+  height: 12vh;
 }
 
 .blog-list-header_container-mobile button {
   padding: 0;
   background-color: transparent;
   font-family: "Roboto Mono", monospace;
+  font-size: 16px;
   border: none;
 }
 
@@ -26,14 +27,15 @@
 
 .blog-logo-img_wrapper-mobile {
   position: relative;
+  margin-top: 20vh;
 }
 
 .blog-logo_container-mobile {
-  width: 30vw;
-  height: 30vh;
-  position: relative;
-  left: 60vw;
-  top: 20vh;
+  width: 32vw;
+  height: auto;
+  position: absolute;
+  right: 12%;
+  top: -16%;
   z-index: 1;
 }
 
@@ -52,5 +54,5 @@
 }
 
 .blog-post-item_container-mobile {
-  height: 10vh;
+  height: 12vh;
 }

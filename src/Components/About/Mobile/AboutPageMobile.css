@@ -14,21 +14,20 @@
 
 .about-mobile-logo-img_wrapper {
   position: relative;
-  margin-top: 16vh;
+  margin-top: 20vh;
 }
 
 .about-mobile-logo_container {
-  width: 24vw;
+  width: 32vw;
   height: auto;
   position: absolute;
-  right: 20%;
-  top: -12%;
+  right: 12%;
+  top: -16%;
   z-index: 1;
 }
 
 .about-mobile-logo_container img {
   width: 100%;
-  height: auto;
 }
 
 .about-mobile-image_container {

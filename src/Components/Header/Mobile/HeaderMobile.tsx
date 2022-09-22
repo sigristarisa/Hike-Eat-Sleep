@@ -28,7 +28,7 @@ const HeaderMobile: React.FC<props> = ({ isNavPage, setIsNavPage }) => {
       <h1 onClick={() => handleWanderfuxBtn()}>wanderfux</h1>
       {isNavPage ? (
         <button className='justify-items_end' onClick={() => closeNavPage()}>
-          CLOSE
+          close
         </button>
       ) : (
         <button className='justify-items_end' onClick={() => openNavPage()}>

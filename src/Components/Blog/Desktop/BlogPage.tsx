@@ -17,12 +17,12 @@ interface props {
 
 const BlogPage: React.FC<props> = ({ windowSize, isMobile }) => {
   return (
-    <div className={`blog-page_container${isMobile()} place-items_center`}>
+    <div className={`blog-page_container${isMobile()} justify-items_center`}>
       <section className={`blog-list_container${isMobile()}`}>
         <BlogListHeader isMobile={isMobile} />
         <BlogList />
       </section>
-      <div className={`blog-logo-img_wrapper${isMobile()}`}>
+      <div className={`blog-logo-img_wrapper${isMobile()} place-items_center`}>
         <div className={`blog-logo_container${isMobile()}`}>
           <img src={hikeEatSleepLogo} alt='hike eat sleep logo' />
         </div>

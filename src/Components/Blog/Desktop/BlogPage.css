@@ -6,7 +6,7 @@
 .blog-list_container {
   width: 50vw;
   padding: 0 1vw;
-  margin: 20vh;
+  margin-top: 20vh;
 }
 
 .blog-list-header_container {
@@ -30,8 +30,10 @@
 }
 
 .blog-logo-img_wrapper {
-  position: relative;
+  width: 96vw;
   margin-top: 16vh;
+  position: relative;
+  border: 1px solid green;
 }
 
 .blog-logo_container {
@@ -49,12 +51,11 @@
 }
 
 .blog-img_container {
-  width: 96vw;
+  width: 100%;
 }
 
 .blog-img_container img {
-  width: 100%;
-  height: auto;
+  max-width: 100%;
 }
 
 .blog-post-item_container {

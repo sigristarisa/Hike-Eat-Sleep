@@ -20,6 +20,11 @@
   background-color: transparent;
 }
 
+.subscribe-form input::placeholder {
+  color: var(--black);
+  opacity: 0.2;
+}
+
 .subscribe-form input[type="submit"]:hover {
   color: var(--red);
 }

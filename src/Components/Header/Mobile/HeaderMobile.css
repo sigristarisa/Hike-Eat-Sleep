@@ -38,11 +38,11 @@
 }
 
 .hi {
-  width: 100vw;
-  height: 100vh;
+  width: 120vw;
+  height: 120vh;
   background-color: var(--red);
   border-radius: 0;
-  animation: navPagePopUp 0.7s;
+  animation: navPagePopUp 0.3s;
   position: fixed;
   z-index: 2;
 }
@@ -51,7 +51,7 @@
   from {
     transform: scale(0%);
     transform-origin: 90vw 10vh;
-    border-radius: 25%;
+    border-radius: 50%;
   }
 
   to {

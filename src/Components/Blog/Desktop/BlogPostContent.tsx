@@ -9,8 +9,6 @@ interface Props {
 }
 
 const BlogPostContent: React.FC<Props> = ({ content }) => {
-  console.log("what's in here:", content.primary as PostText);
-
   return (
     <li>
       {(() => {

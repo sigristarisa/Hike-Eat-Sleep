@@ -4,11 +4,6 @@
   padding: 4vw;
 }
 
-.footer-text-mobile_container p,
-.footer-mobile_container a {
-  font-size: var(--font-s);
-}
-
 .footer-social-media-mobile_wrapper {
   width: 80%;
 }

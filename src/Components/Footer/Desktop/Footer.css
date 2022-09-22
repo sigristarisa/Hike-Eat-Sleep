@@ -2,7 +2,6 @@ footer {
   width: 90vw;
   height: 20vh;
   padding: 60px;
-  font-size: var(--font-xs);
 }
 
 .footer-social-media-icon_container {

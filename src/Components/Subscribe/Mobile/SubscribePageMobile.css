@@ -14,7 +14,6 @@
 .subscribe-form-mobile input {
   border: none;
   background-color: transparent;
-  font-size: var(--font-s);
 }
 
 .subscribe-form-mobile input[type="submit"]:hover {

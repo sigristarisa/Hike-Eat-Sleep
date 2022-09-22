@@ -1,7 +1,6 @@
 .blog-post-page_container-mobile {
   width: 100vw;
   height: 100vh;
-  font-size: var(--font-s);
 }
 
 .blog-post_container-mobile {
@@ -19,6 +18,5 @@
   padding: 0;
   background-color: transparent;
   font-family: "Roboto Mono", monospace;
-  font-size: var(--font-s);
   border: none;
 }

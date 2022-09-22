@@ -8,19 +8,18 @@
 
 .header-mobile_container h1 {
   font-size: var(--font-s);
+  font-weight: 400;
 }
 
 .header-mobile_container button {
   border: none;
   background-color: transparent;
-  font-size: var(--font-s);
 }
 
 .nav-page_container {
   width: 100vw;
   height: 100vh;
   background-color: transparent;
-  font-size: var(--font-s);
 }
 
 .nav-page_container ul {

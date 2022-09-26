@@ -4,10 +4,10 @@
 }
 
 .blog-post_container-mobile {
-  width: 96vw;
+  width: 100vw;
   margin-top: 30vh;
   margin-bottom: 8vh;
-  padding: 0 1vw;
+  padding: 6vw;
 }
 
 .blog-post-header_container-mobile {

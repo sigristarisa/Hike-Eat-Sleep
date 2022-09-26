@@ -40,7 +40,7 @@
 }
 
 .blog-post-element ul {
-  list-style: circle;
+  list-style: inside;
   padding-left: 40px;
 }
 

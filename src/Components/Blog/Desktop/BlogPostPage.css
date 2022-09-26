@@ -18,6 +18,7 @@
   background-color: transparent;
   font-family: "Roboto Mono", monospace;
   border: none;
+  text-align: end;
 }
 
 .blog-post-header_container button:hover {
@@ -36,4 +37,13 @@
 
 .blog-post-content_container img {
   max-width: 100%;
+}
+
+.blog-post-element ul {
+  list-style: circle;
+  padding-left: 40px;
+}
+
+.blog-post-element a {
+  text-decoration: underline;
 }

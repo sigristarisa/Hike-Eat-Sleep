@@ -23,6 +23,7 @@
   font-size: var(--font-s);
   font-family: "Roboto Mono", monospace;
   border: none;
+  text-align: end;
 }
 
 .blog-post-title_container {

@@ -10,7 +10,7 @@ interface Props {
 
 const BlogPostContent: React.FC<Props> = ({ content }) => {
   return (
-    <li>
+    <li className='blog-post-element'>
       {(() => {
         switch (content.slice_type) {
           case "text":

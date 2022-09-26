@@ -67,7 +67,7 @@ const SubscribePage: React.FC<props> = ({ windowSize, isMobile }) => {
               placeholder='hello@wanderfux.com'
               required
             />
-            <input type='submit' value='SUBSCRIBE' />
+            <input type='submit' value='subscribe' />
           </form>
         )}
       </main>

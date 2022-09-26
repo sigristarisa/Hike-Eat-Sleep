@@ -1,6 +1,7 @@
 .subscribe-page_container-mobile {
   width: 100vw;
   height: 100vh;
+  font-size: var(--font-s);
 }
 
 .subscribe-form-mobile {
@@ -13,9 +14,14 @@
 
 .subscribe-form-mobile input {
   padding: 0;
-  font-size: 16px;
+  font-size: var(--font-s);
   border: none;
   background-color: transparent;
+}
+
+.subscribe-form-mobile input[type="submit"] {
+  color: var(--black);
+  font-weight: 400;
 }
 
 .subscribe-form-mobile input[type="submit"]:hover {

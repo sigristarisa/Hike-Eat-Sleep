@@ -23,6 +23,7 @@ button {
   cursor: pointer;
   letter-spacing: 0.1em;
   line-height: 2em;
+  color: var(--black);
 }
 
 input {
@@ -43,7 +44,7 @@ p {
 
 a {
   cursor: pointer;
-  color: black;
+  color: var(--black);
   text-decoration: none;
   line-height: 2em;
 }

@@ -17,6 +17,7 @@
   font-size: var(--font-s);
   border: none;
   background-color: transparent;
+  text-align: end;
 }
 
 .nav-page_container {

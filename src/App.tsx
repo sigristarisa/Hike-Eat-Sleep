@@ -25,7 +25,6 @@ const App: React.FC = () => {
   const isMobile = (): string => {
     return windowSize.innerWidth > 600 ? "" : "-mobile";
   };
-
   const [navBtnId, setNavBtnId] = useState<number>(0);
   const [windowSize, setWindowSize] = useState<WindowSize>(getWindowSize());
   const [isNavPage, setIsNavPage] = useState<boolean>(false);

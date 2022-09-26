@@ -2,25 +2,29 @@
   width: 96vw;
   height: 20vh;
   padding: 4vw;
+  font-size: 12px;
 }
 
 .footer-social-media-mobile_wrapper {
-  width: 80%;
+  gap: 16px;
 }
 
 .footer-social-media-mobile_container {
-  width: 80%;
+  width: 100%;
 }
 
 .footer-social-media-icon-mobile_container {
-  max-width: 20px;
-  max-height: 20px;
-  min-width: 16px;
-  min-height: 16px;
+  width: 32px;
+  height: 30px;
   margin-right: 4px;
 }
 
-.footer-social-media-icon-mobile_container img {
-  width: 100%;
-  height: 100%;
+.instagram img {
+  width: 72%;
+  height: 72%;
+}
+
+.youtube img {
+  width: 80%;
+  height: 80%;
 }

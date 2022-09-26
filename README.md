@@ -1,7 +1,7 @@
 <h1 align="center">⛰🔥Hike.Eat.Sleep.⛺️🦊</h1>
 
-First client work requested from wanderfux, with responsive interface to be compatible for desktops and mobiles. <br>
-This website is built with Prismic (CMS), making it possible for the client to create new contents easily, as well as preview contents before publishing.
+First client work requested from [wanderfux](https://www.instagram.com/by.wanderfux), with responsive interface to be compatible for desktops and mobiles. <br>
+This website is built with [Prismic](https://prismic.io/) (CMS), making it possible for the client to create new contents easily, as well as preview contents before publishing.
 
 
 ## What Does the Website Have?

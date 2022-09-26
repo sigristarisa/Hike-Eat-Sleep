@@ -1,6 +1,7 @@
 .about-page-mobile_container {
   width: 100vw;
   height: 100vh;
+  font-size: var(--font-s);
 }
 
 .about-text-mobile_container {

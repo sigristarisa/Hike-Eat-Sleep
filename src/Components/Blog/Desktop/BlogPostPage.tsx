@@ -25,12 +25,19 @@ const BlogPostPage: React.FC<props> = ({ windowSize, isMobile }) => {
   return (
     <div className={`blog-post-page_container${isMobile()} place-items_center`}>
       {blogpost && (
-        <div className={`blog-post_container${isMobile()}`}>
+        <div className={`blog-post_container${isMobile()} `}>
           <header
-            className={`blog-post-header_container${isMobile()} grid-columns_two-extend-auto`}
+            className={`blog-post-header_container${isMobile()} justify-items_start `}
           >
-            <p>{blogpost.data.post_title[0].text}</p>
-            <button onClick={() => navigate("../blog")}>close article</button>
+            <button
+              className='justify-self_end'
+              onClick={() => navigate("../blog")}
+            >
+              close article
+            </button>
+            <div className='blog-post-title_container align-items_end'>
+              <p>{blogpost.data.post_title[0].text}</p>
+            </div>
           </header>
           <div className='blog-post-content_container'>
             <ul>

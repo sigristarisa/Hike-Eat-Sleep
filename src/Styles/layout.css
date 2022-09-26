@@ -43,6 +43,11 @@
   justify-items: end;
 }
 
+.align-items_start {
+  display: grid;
+  align-items: start;
+}
+
 .align-items_center {
   display: grid;
   align-items: center;
@@ -51,6 +56,10 @@
 .align-items_end {
   display: grid;
   align-items: end;
+}
+
+.justify-self_end {
+  justify-self: end;
 }
 
 .place-items_center {

@@ -2,7 +2,7 @@
   width: 96vw;
   height: 20vh;
   padding: 4vw;
-  font-size: 12px;
+  font-size: var(--font-xs);
 }
 
 .footer-social-media-mobile_wrapper {

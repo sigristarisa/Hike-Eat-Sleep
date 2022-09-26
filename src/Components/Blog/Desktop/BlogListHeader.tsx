@@ -11,8 +11,8 @@ const BlogListHeader: React.FC<props> = ({ isMobile }) => {
     <div
       className={`blog-list-header_container${isMobile()} grid-columns_two-extend-auto align-items_center`}
     >
-      <p>outdoor blog{isMobile() && <br></br>} by wanderfux</p>
-      <button onClick={() => navigate("../subscribe")}>SUBSCRIBE</button>
+      <p>fux blog</p>
+      <button onClick={() => navigate("../subscribe")}>subscribe</button>
     </div>
   );
 };

@@ -4,16 +4,17 @@
   padding: 6vw;
   z-index: 3;
   position: fixed;
+  font-size: var(--font-s);
 }
 
 .header-mobile_container h1 {
-  font-size: 16px;
+  font-size: var(--font-s);
   font-weight: 400;
 }
 
 .header-mobile_container button {
   padding: 0;
-  font-size: 16px;
+  font-size: var(--font-s);
   border: none;
   background-color: transparent;
 }
@@ -30,7 +31,7 @@
 }
 
 .nav-page_navBtn-item button {
-  font-size: 16px;
+  font-size: var(--font-s);
   background-color: transparent;
   border: none;
 }

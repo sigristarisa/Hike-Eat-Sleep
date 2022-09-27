@@ -9,8 +9,7 @@ const AboutPage: React.FC = () => {
     <div className='about-page_container place-items_center'>
       <main className='place-items_center'>
         <div className='about-text_container'>
-          <p>about</p>
-          <br></br>
+          <p className='about-wanderfux-text'>about</p>
           <p>
             The scent of the wet woods. The dark clouds between the cold
             summits. Nesting myself at the bank of a lonely lake. I muffle the
@@ -18,8 +17,7 @@ const AboutPage: React.FC = () => {
             All I do to recall those intangible joy are often forgotten – hike,
             eat, sleep.
           </p>
-          <br></br>
-          <p>wanderfux, switzerland</p>
+          <p className='about-wanderfux-text'>wanderfux, switzerland</p>
         </div>
         <div className='about-logo-img_wrapper'>
           <div className='about-logo_container'>

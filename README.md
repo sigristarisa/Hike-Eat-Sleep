@@ -19,7 +19,8 @@ This website is built with [Prismic](https://prismic.io/) (CMS), making it possi
 ## What Tools are Used?
 - Prismic (content management)
 - Vercel (deployment)
-- Figma (UX / UI)
+- Figma (web design)
+- ngrok (Mobile UX/UI)
 
 
 ## Demo (Desktop)

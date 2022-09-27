@@ -55,5 +55,10 @@
 }
 
 .blog-post-item_container-mobile {
-  height: 12vh;
+  height: 20vh;
+}
+
+.blog-post-item_container-underline-mobile {
+  height: 20vh;
+  border-bottom: 1px solid var(--black);
 }

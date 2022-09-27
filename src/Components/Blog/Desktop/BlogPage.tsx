@@ -20,7 +20,7 @@ const BlogPage: React.FC<props> = ({ windowSize, isMobile }) => {
     <div className={`blog-page_container${isMobile()} justify-items_center`}>
       <section className={`blog-list_container${isMobile()}`}>
         <BlogListHeader isMobile={isMobile} />
-        <BlogList />
+        <BlogList isMobile={isMobile} />
       </section>
       <div className={`blog-logo-img_wrapper${isMobile()} place-items_center`}>
         <div className={`blog-logo_container${isMobile()}`}>

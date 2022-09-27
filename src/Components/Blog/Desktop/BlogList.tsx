@@ -3,7 +3,11 @@ import { useAllPrismicDocumentsByType } from "@prismicio/react";
 import BlogPostItem from "./BlogPostItem";
 import { BlogPost } from "../../../helpers/types";
 
-const BlogList: React.FC = () => {
+interface props {
+  isMobile: Function;
+}
+
+const BlogList: React.FC<props> = ({ isMobile }) => {
   const [blogposts] = useAllPrismicDocumentsByType<BlogPost>("blogpost");
 
   if (blogposts) {
@@ -30,6 +34,7 @@ const BlogList: React.FC = () => {
               key={index}
               index={index}
               blogpostLength={blogposts.length}
+              isMobile={isMobile}
             />
           ))}
       </ul>

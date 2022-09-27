@@ -17,6 +17,7 @@
   padding: 0;
   background-color: transparent;
   font-family: "Roboto Mono", monospace;
+  font-size: var(--font-s);
   border: none;
 }
 
@@ -58,9 +59,10 @@
 }
 
 .blog-post-item_container {
-  height: 20vh;
+  height: 10vh;
 }
 
 .blog-post-item_container-underline {
-  border-bottom: 1px solid black;
+  height: 10vh;
+  border-bottom: 1px solid var(--black);
 }

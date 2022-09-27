@@ -10,13 +10,15 @@ const AboutPage: React.FC = () => {
       <main className='place-items_center'>
         <div className='about-text_container'>
           <p>about</p>
+          <br></br>
           <p>
             The scent of the wet woods. The dark clouds between the cold
             summits. Nesting myself at the bank of a lonely lake. I muffle the
             last bits of bread, while the warmth of the sun leaves from my face.
-            All I do to recall those intangible joy are often forgotten –{" "}
-            <br></br>hike, eat, sleep.
+            All I do to recall those intangible joy are often forgotten – hike,
+            eat, sleep.
           </p>
+          <br></br>
           <p>wanderfux, switzerland</p>
         </div>
         <div className='about-logo-img_wrapper'>

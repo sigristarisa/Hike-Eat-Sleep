@@ -83,7 +83,7 @@ const App: React.FC = () => {
           path='/shop'
           element={<ShopPage windowSize={windowSize} isMobile={isMobile} />}
         />
-        <Route path='/blog/preview' element={<Preview />} />
+        <Route path='/preview' element={<Preview />} />
       </Routes>
     </div>
   );

@@ -10,21 +10,20 @@ interface props {
 const BlogList: React.FC<props> = ({ isMobile }) => {
   const [blogposts] = useAllPrismicDocumentsByType<BlogPost>("blogpost");
 
-  blogposts!.sort((blogpostOne, blogpostTwo) => {
-    const dateOne: string = blogpostOne
-      .first_publication_date!.split("T")[0]
-      .split("-")
-      .join("");
-    const dateTwo: string = blogpostTwo
-      .first_publication_date!.split("T")[0]
-      .split("-")
-      .join("");
+  if (blogposts) {
+    blogposts.sort((blogpostOne, blogpostTwo) => {
+      const blogOneDate = blogpostOne.first_publication_date;
+      const blogTwoDate = blogpostTwo.first_publication_date;
 
-    console.log("dateOne", dateOne);
-    console.log("dateTwo", dateTwo);
+      if (blogOneDate === null) return 1;
 
-    return dateTwo.localeCompare(dateOne);
-  });
+      if (blogTwoDate === null) return 1;
+
+      if (blogOneDate === blogTwoDate) return 0;
+
+      return blogOneDate > blogTwoDate ? -1 : 1;
+    });
+  }
 
   return (
     <div>

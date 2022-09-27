@@ -4,7 +4,6 @@ import hikeEatSleepHomeMobile from "../../../assets/HikeEatSleep_HomeMobile.png"
 import "./HomepageMobile.css";
 
 const HomePageMobile: React.FC = () => {
-  console.log("hi");
   return (
     <main className='home-page-mobile_container'>
       <div className='home-mobile-logo-img_wrapper justify-items_center align-items_end'>

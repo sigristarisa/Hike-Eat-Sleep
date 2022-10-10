@@ -9,6 +9,10 @@ footer {
   gap: 32px;
 }
 
+.footer-social-media_container a:hover {
+  color: var(--red);
+}
+
 .footer-social-media-icon_container {
   max-width: 40px;
   max-height: 40px;

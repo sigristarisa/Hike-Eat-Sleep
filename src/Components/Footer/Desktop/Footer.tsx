@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
   return (
     <footer className='grid-columns_two-extend-one'>
       <div className='footer-text_container align-items_center'>
-        <p>©2020 ・ wanderfux ・ switzerland ・ Impressum</p>
+        <p>©2020 ・ wanderfux ・ switzerland</p>
       </div>
       <div className='footer-social-media_container grid-columns_two justify-items_end'>
         <div className='grid-colums_two-extend-two place-items_center'>

@@ -91,3 +91,33 @@ export interface Location {
 
   key: string;
 }
+
+interface ShopProductImage {
+  alt: string;
+  url: string;
+}
+
+interface ShopProductBody {
+  id: string;
+  items: ShopProductImage[];
+}
+
+interface ShopProductData {
+  body: ShopProductBody[];
+}
+
+export interface ShopProduct {
+  data: ShopProductData;
+  alternate_languages: [];
+  first_publication_date: string;
+  href: string;
+  id: string;
+  lang: string;
+  last_publication_date: string;
+  linked_documents: [];
+  slugs: string[];
+  tags: [];
+  type: string;
+  uid: string;
+  url: string;
+}

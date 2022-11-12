@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
+import { usePrismicDocumentByUID } from "@prismicio/react";
+
 import { useLocation, useNavigate } from "react-router-dom";
 import BlogPostContent from "./BlogPostContent";
 import Footer from "../../Footer/Desktop/Footer";
@@ -13,14 +15,16 @@ interface props {
 }
 
 const BlogPostPage: React.FC<props> = ({ windowSize, isMobile }) => {
-  const [blogpost, setBlogPost] = useState<BlogPost>();
+  // const [blogpost, setBlogPost] = useState<BlogPost>();
   const location = useLocation();
-  const navigate = useNavigate();
 
-  useEffect(() => {
-    const clickedBlogPost: BlogPost = (location as Location).state.blogpost;
-    setBlogPost(clickedBlogPost);
-  }, []);
+  const blogpostUid = location.pathname.split("/")[2];
+
+  const navigate = useNavigate();
+  const [blogpost] = usePrismicDocumentByUID<BlogPost>(
+    "blogpost",
+    `${blogpostUid}`
+  );
 
   return (
     <div className={`blog-post-page_container${isMobile()} place-items_center`}>

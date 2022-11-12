@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { usePrismicDocumentByUID } from "@prismicio/react";
 
 import { useLocation, useNavigate } from "react-router-dom";
 import BlogPostContent from "./BlogPostContent";
 import Footer from "../../Footer/Desktop/Footer";
 import FooterMobile from "../../Footer/Mobile/FooterMobile";
-import { BlogPost, Location, WindowSize } from "../../../helpers/types";
+import { BlogPost, WindowSize } from "../../../helpers/types";
 import "./BlogPostPage.css";
 import "../Mobile/BlogPostPageMobile.css";
 
@@ -15,7 +15,6 @@ interface props {
 }
 
 const BlogPostPage: React.FC<props> = ({ windowSize, isMobile }) => {
-  // const [blogpost, setBlogPost] = useState<BlogPost>();
   const location = useLocation();
 
   const blogpostUid = location.pathname.split("/")[2];
